@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap');
+
+/* geral */
+body{
+    margin: 0;
+    padding: 0;
+}
+/* fim */
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 140px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav h2 {
+    text-align: right;
+}
+
+
+    h2 a {
+        color: black;
+    }
+
+    .menu a {
+        color: black;
+        font-weight: bold;
+        background-color: white;
+        justify-content: start;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        color: #6a6a6a;
+        text-decoration: none;
+    }
+
+    .menu a:hover{
+        color: #f2f2f2;
+        background-color: #55595c;
+    }
+
+
+
+    /*Esta classe será MANIPULADA via JS*/
+    .menu-aberto{
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        background-color: white;
+        z-index: 9999;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+.icone {
+    font-size: 45px;
+    height: 35px;
+    display: inline-block; /*Sempre que quise dar altura para o elemento e ele não for um elemento, devemos usar display: block ou inline block;*/
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 10px 5px;
+}
+
+.icone:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 960px){
+
+    header{
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20px;
+        padding-left: 60px;
+        height: 140px;
+        padding-top: 45px;
+        padding-bottom: 35px;
+    }
+
+    
+    .icone{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        gap: 50px;
+        font-family: 'Poppins';
+        font-size: 16px;
+        list-style: none;
+        text-transform: uppercase;
+        align-items: center;
+    }
+
+    .menu a:hover{
+        color: #2E75CC;
+        background-color: transparent;
+    }
+
+    .menu .active{
+        color: #2E75CC;
+    }
+
+    .menu a{
+        color: black;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
+
+/* fim cabeçalho */
+
+
+/* slides */
+
+.carousel-caption{
+    z-index: 9998;
+    right: 7%;
+    top: 3%;
+    /* margin-right: 50%; */
+    width: 88%;
+    /* font-size: clamp(16px, 2vw, 18px); */
+    /* top: 5%; */
+    font-size: 16px;
+} 
+
+.carousel-caption h1{
+    font-weight: bold;
+}
+
+.carousel-caption p{
+    font-size: clamp(15px, 2vw, 18px);
+}
+
+.carousel-item{
+    position: relative;
+    height: 350px; 
+}
+
+
+
+
+.carousel-item::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.455);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9998;
+    position: absolute;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 9998;
+
+}
+
+.carousel-control-prev{
+    margin: 0;
+    padding: 0;
+    /* padding-right: 10%; */
+}
+
+@media screen and (min-width: 960px) {
+    
+  
+    .carousel-item{
+        position: relative;
+        height: 400px; 
+    }
+    
+    .carousel-caption{
+        z-index: 9999;
+        /* bottom: 20%;  */
+        top: 20%;
+        right: 30%;
+        /* margin-right: 50%; */
+        width: 65%;
+        /* font-size: clamp(16px, 2vw, 18px); */
+        /* top: 5%; */
+    } 
+    
+    .carousel-caption h2{
+        width: 800px;
+    }
+    
+    /* .container{
+        height: 300px;
+    } */
+}
+
+/* fim slides */
+
+/* início servicos home */
+
+.main_home h2{
+    text-align: center;
+    color: #142C4D;
+    font-size: clamp(30px, 3vw, 50px);
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.servicos_home article{
+    background-color: #f7f7f7;
+    padding-top: 30px;
+    width: 90%;
+    padding-bottom: 60px;
+    margin-bottom: 25px;
+}
+
+.servicos_home ul, .servicos_home_dois ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    font-family: 'Open Sans';
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+.servicos_home h3, .servicos_home_dois h3{
+    color: #142C4D;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.servicos_home_dois article{
+    background-color: #f7f7f7;
+    padding-top: 30px;
+    width: 90%;
+    padding-bottom: 60px;
+    margin-bottom: 25px;
+    height: 200px;
+}
+
+.servicos_home a, .servicos_home_dois a{
+    text-decoration: none;
+    color: black;
+}
+
+.servicos_home a:hover, .servicos_home_dois a:hover{
+    color: #2E75CC;
+}
+
+
+
+@media screen and (min-width: 960px){
+    .servicos_home article{
+        
+        width: 32%;
+        
+    }
+
+    .servicos_home_dois article{
+       
+        width: 32%;
+        
+    }
+}
+
+/* fim serviços */
+
+
+/* sobre_home */
+
+.sobre_home{
+    background-color: #142C4D;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+}
+
+
+
+.sobre_home h2{
+    color: white;
+    text-align: center;
+    font-size: clamp(30px, 3vw, 65px);
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.sobre_home p{
+    color: white;
+}
+
+.numeros p{
+    display: block;
+    
+}
+
+.contador{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.texto_sobre button{
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.texto_sobre button:hover{
+    background-color: #8ac2f5;
+    transform: scale(1.1);
+}
+
+/* fim de sobre_home */
+
+/* clientes */
+
+.clientes h2{
+    text-align: center;
+    color: #142C4D;
+    font-size: clamp(40px, 3vw, 50px);
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.owl-carousel .item img{
+    height: 70px;
+    width: 200px;
+}
+
+.owl-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 80px;
+}
+
+
+@media screen and (min-width: 960px) {
+    .owl-carousel .item img{
+        height: 80px;
+        width: 240px;
+    }
+
+    .owl-carousel{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+    
+}
+
+/* fim clientes */
+
+
+/* depoimentos */
+
+.especial{
+    
+    margin-top: 100px;
+}
+
+.especial h2{
+    margin-bottom: 25px;
+    text-align: center;
+    color: #142C4D;
+    font-size: clamp(40px, 3vw, 50px);
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.depoimentos article p{
+    width: 400px;
+}
+
+.depoimentos summary{
+    color: #6EC1E4;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* fim depoimento */
+
+/* contato */
+
+.contato h2{
+    text-align: center;
+}
+
+label, input{
+    display: block;
+    width: 80%;
+    height: 40px;
+}
+
+textarea{
+    display: block;
+    width: 80%;
+}
+
+.contato{
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* fim contato home */
+
+
+/* footer */
+footer{
+    background-color: #181b1d;
+    color: white;
+    padding: 70px 15px 70px 15px;
+    margin-top: 100px;
+}
+
+footer article{
+    margin-bottom: 15px;
+}
+
+footer article h2{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+footer article ul{
+    list-style: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+    color: #FFFFFFB3;
+    padding: 0;
+}
+
+footer li a{
+    text-decoration: none;
+    color: #FFFFFFB3;
+}
+
+
+footer .adicionais li:hover, footer li a:hover{
+    color: #CC9955;
+}
+footer i{
+    color: #CC9955;
+}
+
+/* fim footer */
+
+
+/* página sobre */
+
+.sobre{
+    background-image: url(../imagens/pexels-fauxels-3183197-1024x683.jpg);
+    height: 400px;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 9997;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+
+}
+
+.sobre::before{
+    background-color: #181b1daa;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: 9997;
+
+    
+}
+
+.sobre article{
+    z-index: 9998;
+    position: absolute;
+    color: white;
+    width: 80%;
+}
+
+.sobre article h1{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: clamp(35px, 4vw, 50px);
+}
+
+.sobre article p{
+    font-family: 'Roboto';
+}
+
+.sobre article span{
+    color: #9cca43;
+}
+
+.section_sobre{
+    display: flex;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section_sobre h2{
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #335700;
+    font-size: 40px;
+}
+
+.section_sobre ul{
+    list-style: none;
+    padding: 0;
+}
+
+.section_sobre ul li:hover{
+    color: #2E75CC;
+}
+
+.section_sobre i{
+    color: #2E75CC;
+}
+
+/* fim de sobre */
+
+/* início de serviços */
+.hero_servicos{
+    background-image: url(../imagens/ponte.jpg);
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 9997;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+   
+
+.hero_servicos::before {
+background-color: #181b1dc1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+content: '';
+position: absolute;
+z-index: 9997;
+
+}
+
+
+.hero_servicos h1{
+    text-align: center;
+    position: absolute;
+    z-index: 9999;
+    color: white;
+    font-size: clamp(35px, 5vw, 50px);
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.lista_um{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+}
+
+.lista_um ul{
+    padding: 0;
+    list-style: none;
+}
+
+.lista_um li:hover{
+    color: #2E75CC;
+}
+
+.lista_um i{
+    color: #2E75CC;
+}
+
+.lista_um hr{
+    margin: 1px;
+    opacity: 0.1;
+}
+
+.caixa_titulo{
+    background-color: #142c4d;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.caixa_titulo h2{
+    font-size: 22px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
