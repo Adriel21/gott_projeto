@@ -261,7 +261,7 @@ nav h2 {
     list-style: none;
     padding: 0;
     margin: 0;
-    line-height: 35px;
+    line-height: 50px;
     font-family: 'Open Sans';
     /* font-weight: 400; */
     font-size: 16px;
@@ -281,7 +281,7 @@ nav h2 {
     width: 90%;
     padding-bottom: 60px;
     margin-bottom: 25px;
-    height: 40%;
+    height: 250px;
 }
 
 .servicos_home a, .servicos_home_dois a{
@@ -363,9 +363,10 @@ nav h2 {
     transform: scale(1.1);
 }
 
-/* fim de sobre_home */
+/* fim do sobre home */
 
-/* clientes */
+/* Clientes */
+
 
 .clientes h2{
     text-align: center;
@@ -376,6 +377,8 @@ nav h2 {
     margin-top: 25px;
     margin-bottom: 45px;
 }
+
+
 
 .owl-carousel .item img{
     height: 60px;
@@ -462,13 +465,13 @@ nav h2 {
 
 label, input{
     display: block;
-    width: 80%;
+    width: 90%;
     height: 40px;
-}
+} 
 
 textarea{
     display: block;
-    width: 80%;
+    width: 90%;
 }
 
 .contato{
@@ -651,7 +654,7 @@ footer i{
    
 
 .hero_servicos::before {
-background-color: #181b1dc1;
+background-color: #181b1dc7;
 top: 0;
 left: 0;
 right: 0;
@@ -711,4 +714,283 @@ z-index: 9997;
     font-family: 'Poppins';
     font-weight: bold;
 }
+
+/* fim da página serviços */
+
+/* início da página de trabalhe conosco */
+.hero_trabalhe_conosco{
+    background-image: url(../imagens/trabalho.jpg);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+
+}
+
+.hero_trabalhe_conosco::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #181b1dc7;
+}   
+
+.hero_trabalhe_conosco h1{
+    color: white;
+    position: absolute;
+    font-size: clamp(35px, 5vw, 50px);
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+ .apresentacao_trabalhe_conosco{
+   padding-left: 15px;
+   padding-right: 15px;
+} 
+
+.apresentacao_trabalhe_conosco span h2{
+    color: #9CCA43;
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.apresentacao_trabalhe_conosco span img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.valores h2{
+    color: #142C4D;
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.valores h4{
+    font-size: 22px;
+    color: #142C4D;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+
+.valores p{
+    max-width: 600px;
+}
+
+.formulario_trabalhe_conosco h2{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    background-color: #2a799a;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+
+
+.formulario_trabalhe_conosco form{
+    width: 90%;
+    margin: 0 auto;    
+    margin-right: 0;
+}
+
+.formulario_trabalhe_conosco label{
+    font-weight: bold;
+}
+
+.formulario_trabalhe_conosco input, .formulario_trabalhe_conosco textarea{
+    background-color: #efefef;
+    margin-bottom: 15px;
+    border-style: solid;
+    padding-left: 8px;
+}
+
+.input-file{
+    border: 5px solid #efefef;
+    border-style: solid;
+}
+
+.formulario_trabalhe_conosco input:active{
+   border: 2px solid #efefef;
+}
+
+.formulario_trabalhe_conosco button{
+    background-color: #1a3861;
+    color: white;
+    border: none;
+    padding: 8px 35px 8px 35px;
+    border-radius: 3px;
+    font-family: 'Poppins';
+    margin-top: 5px;
+}
+
+.formulario_trabalhe_conosco button:hover{
+    background-color: #142C4D;
+}
+
+
+
+
+
+
+/* fim do trabalhe conosco */
+
+
+/* início do contato */
+.fale_conosco_banner{
+    background-image: url(../imagens/fale_conosco.jpg);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.fale_conosco_banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #181b1dc7;
+}   
+
+.fale_conosco_banner h1{
+    color: white;
+    position: absolute;
+    font-size: clamp(35px, 5vw, 50px);
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.fale_conosco_conteudo{
+    padding: 0px;
+    margin: 20px 5px;
+}
+
+.fale_conosco_texto{    
+    padding: 0; 
+    width: 100%;
+} 
+
+@media screen and (min-width: 960px) {
+
+    .fale_conosco_conteudo{
+        margin: 40px;
+        padding: 35px;
+    }
+    
+    .fale_conosco_texto{    
+        padding: 35px; 
+        width: 50%;
+    } 
+    
+}
+
+
+
+
+.fale_conosco_texto ul>li{
+    list-style: none;
+}
+
+.fale_conosco_texto h3{
+    font-family: 'poppins';
+    font-weight: 600;
+    line-height: 40px;
+    font-size: clamp(25px, 3vw, 40px);
+    color: #142c4d;    
+    max-width: 20ch;
+    margin:  auto;
+}
+
+.fale_conosco_texto p,span{
+    color: #222;
+    font-family: 'Open Sans';
+    font-size: clamp(16px, 2.5vw, 20px);;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 50ch;
+    margin: 0 auto;
+
+}
+
+.fale_conosco_txt_horario{
+    color: #222;
+    font-family: 'Open Sans';
+    font-size: 17px; 
+    font-weight: 900;
+    line-height: 15px;
+}
+
+
+
+
+.formulario_fale_conosco h2{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    background-color: #2a799a;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+
+
+.formulario_fale_conosco form{
+    width: 100%;
+    margin: 0 auto;    
+    margin-right: 0;
+}
+
+.formulario_fale_conosco label{
+    font-weight: bold;
+}
+
+.formulario_fale_conosco textarea{
+    background-color: #efefef;
+    margin-bottom: 15px;
+    border-style: solid;
+    padding-left: 8px;
+}
+
+
+
+.formulario_fale_conosco input:active{
+   border: 2px solid #efefef;
+}
+
+.formulario_fale_conosco button{
+    background-color: #1a3861;
+    color: white;
+    border: none;
+    padding: 8px 35px 8px 35px;
+    border-radius: 3px;
+    font-family: 'Poppins';
+    margin-top: 5px;
+}
+
+.formulario_fale_conosco button:hover{
+    background-color: #142C4D;
+}
+
+
 
