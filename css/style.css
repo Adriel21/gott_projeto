@@ -17,6 +17,9 @@ header{
     height: 140px;
     padding-top: 45px;
     padding-bottom: 35px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 
@@ -76,7 +79,13 @@ nav h2 {
     background-color: #f2f2f2;
     display: flex;
     align-items: center;
-    padding: 0 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
+}
+
+@media screen and (min-width: 500px){
+    .icone{
+        padding: 10px 5px 20px 5px;
+    }
 }
 
 .icone:hover{
@@ -95,6 +104,10 @@ nav h2 {
         height: 140px;
         padding-top: 45px;
         padding-bottom: 35px;
+        z-index: 9999;
+        -webkit-box-shadow:0px 0px 1px black;
+        -moz-box-shadow:0px 0px 1px black;
+        box-shadow:0px 0px 3px black;
     }
 
     
@@ -136,7 +149,7 @@ nav h2 {
 .carousel-caption{
     z-index: 9998;
     right: 7%;
-    top: 3%;
+    top: 10%;
     /* margin-right: 50%; */
     width: 88%;
     /* font-size: clamp(16px, 2vw, 18px); */
@@ -155,6 +168,18 @@ nav h2 {
 .carousel-item{
     position: relative;
     height: 350px; 
+}
+
+.carousel-caption .btn{
+    background-color: #2C9CD6;
+    color: white;
+    font-family: 'Roboto';
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.carousel-caption .btn:hover{
+    background-color: #2979A6;
 }
 
 
@@ -191,7 +216,7 @@ nav h2 {
     }
     
     .carousel-caption{
-        z-index: 9999;
+        z-index: 9998;
         /* bottom: 20%;  */
         top: 20%;
         right: 30%;
@@ -256,7 +281,7 @@ nav h2 {
     width: 90%;
     padding-bottom: 60px;
     margin-bottom: 25px;
-    height: 200px;
+    height: 40%;
 }
 
 .servicos_home a, .servicos_home_dois a{
@@ -353,8 +378,8 @@ nav h2 {
 }
 
 .owl-carousel .item img{
-    height: 70px;
-    width: 200px;
+    height: 60px;
+    width: 160px;
 }
 
 .owl-nav{
@@ -399,8 +424,10 @@ nav h2 {
     margin-top: 25px;
 }
 
+
+
 .depoimentos article p{
-    width: 400px;
+    width: 370px;
 }
 
 .depoimentos summary{
@@ -409,6 +436,20 @@ nav h2 {
     font-family: 'Poppins';
     font-weight: bold;
     margin-top: 15px;
+}
+
+.depoimentos img{
+    width: 370px;
+}
+
+@media screen and (min-width: 960px){
+    .depoimentos img{
+        width: 400px;
+    }
+
+    .depoimentos article p{
+        width: 400px;
+    }
 }
 
 /* fim depoimento */
@@ -490,7 +531,7 @@ footer i{
 .sobre{
     background-image: url(../imagens/pexels-fauxels-3183197-1024x683.jpg);
     height: 400px;
-    width: 100vw;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -505,7 +546,7 @@ footer i{
 }
 
 .sobre::before{
-    background-color: #181b1daa;
+    background-color: #181b1ddf;
     top: 0;
     left: 0;
     right: 0;
@@ -521,8 +562,16 @@ footer i{
     z-index: 9998;
     position: absolute;
     color: white;
+    width: 90%;
+}
+
+@media screen and (min-width: 960px) {
+    .sobre article{
     width: 80%;
 }
+}
+
+
 
 .sobre article h1{
     font-family: 'Poppins';
@@ -532,6 +581,7 @@ footer i{
 
 .sobre article p{
     font-family: 'Roboto';
+    font-size: clamp(16px, 2vw, 18px);
 }
 
 .sobre article span{
@@ -541,9 +591,16 @@ footer i{
 .section_sobre{
     display: flex;
     gap: 40px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 960px) {
+    .section_sobre{
+        width: 80%;
+    }
+}
+
 
 .section_sobre h2{
     font-family: 'Poppins';
@@ -564,6 +621,13 @@ footer i{
 .section_sobre i{
     color: #2E75CC;
 }
+
+.section_sobre hr{
+    margin: 1px;
+    opacity: 0.2;
+}
+
+
 
 /* fim de sobre */
 
