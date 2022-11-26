@@ -49,15 +49,17 @@
         </section>
         <section class="formulario_fale_conosco">
             <div>
-                <form action="">
+                <form action="fale_conosco.php" method="POST">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" placeholder="Digite o seu nome ou da sua empresa">
                     <label for="email">E-mail</label>
                     <input type="text" name="email" placeholder="exemplo@exemplo.com.br">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder="(11) 99999-9999">
                     <label for="assunto">Assunto</label>
                     <input type="text" name="assunto" placeholder="Ex: Duvidas sobre serviços">
                     <label for="mensagem">Mensagem</label>
-                    <textarea name="" id="" cols="30" rows="7" placeholder="Exreva sua mensagem"></textarea>
+                    <textarea name="mensagem" id="" cols="30" rows="7" placeholder="Exreva sua mensagem"></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
