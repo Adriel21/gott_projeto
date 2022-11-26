@@ -251,16 +251,16 @@ nav h2 {
 
 .servicos_home article{
     background-color: #f7f7f7;
-    padding-top: 30px;
+    padding: 30px;
     width: 90%;
-    padding-bottom: 60px;
+    max-height: 340px;
     margin-bottom: 25px;
 }
 
 .servicos_home ul, .servicos_home_dois ul{
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 0px;
     line-height: 50px;
     font-family: 'Open Sans';
     /* font-weight: 400; */
@@ -273,13 +273,20 @@ nav h2 {
     color: #142C4D;
     font-family: 'Poppins';
     font-weight: 600;
+       
+}
+.servicos_home hr, .servicos_home_dois hr{
+    color:  #716f6f;
+    width: 185px;
+    border-width: 2px;
+    margin: 15px auto;
 }
 
 .servicos_home_dois article{
     background-color: #f7f7f7;
     padding-top: 30px;
     width: 90%;
-    padding-bottom: 60px;
+    max-height: 220px;
     margin-bottom: 25px;
     height: 250px;
 }
@@ -336,6 +343,9 @@ nav h2 {
 
 .sobre_home p{
     color: white;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .numeros p{
@@ -346,8 +356,8 @@ nav h2 {
 .contador{
     font-size: 60px;
     font-weight: bold;
-}
 
+}
 
 .texto_sobre button{
     background-color: #5bc0de;
@@ -382,7 +392,8 @@ nav h2 {
 
 .owl-carousel .item img{
     height: 60px;
-    width: 160px;
+    width: 135px;
+    padding-left: 20px;
 }
 
 .owl-nav{
@@ -412,19 +423,18 @@ nav h2 {
 
 /* depoimentos */
 
-.especial{
-    
+.especial{    
     margin-top: 100px;
 }
 
 .especial h2{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     text-align: center;
     color: #142C4D;
     font-size: clamp(40px, 3vw, 50px);
     font-family: 'Poppins';
-    font-weight: 700;
-    margin-top: 25px;
+    font-weight: 500;
+    margin-top: 35px;
 }
 
 
@@ -439,6 +449,10 @@ nav h2 {
     font-family: 'Poppins';
     font-weight: bold;
     margin-top: 15px;
+}
+.depoimentos details{
+    border-bottom: 1px solid rgb(191, 187, 187);
+
 }
 
 .depoimentos img{
@@ -475,8 +489,37 @@ textarea{
 }
 
 .contato{
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
+}
+
+.contato .formulario_fale_conosco{
+    margin-top: 60px;
+}
+
+.contato hr{
+    width: 90%;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    border-width: 2px;
+}
+.valores_home{
+    text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+    .contato{
+        display: flex;
+    }
+    .valores_home{
+        width: 50%;
+    }
+    .contato .formulario_fale_conosco{
+        margin-top: 0px;
+    }
+    .valores_home{
+        text-align: left;
+    }
 }
 
 
@@ -556,9 +599,7 @@ footer i{
     bottom: 0;
     content: '';
     position: absolute;
-    z-index: 9997;
-
-    
+    z-index: 9997;    
 }
 
 .sobre article{
@@ -566,6 +607,10 @@ footer i{
     position: absolute;
     color: white;
     width: 90%;
+}
+
+.endereco ul{
+    list-style: none;
 }
 
 @media screen and (min-width: 960px) {
@@ -596,6 +641,13 @@ footer i{
     gap: 40px;
     width: 90%;
     margin: 0 auto;
+}
+
+.hrSobre{
+    color:  black;
+    width: 90%;
+    border-width: 2px;
+    margin: 15px auto;
 }
 
 @media screen and (min-width: 960px) {
@@ -685,6 +737,7 @@ z-index: 9997;
 .lista_um ul{
     padding: 0;
     list-style: none;
+    
 }
 
 .lista_um li:hover{
@@ -699,7 +752,19 @@ z-index: 9997;
     margin: 1px;
     opacity: 0.1;
 }
-
+@media screen and (min-width: 960px) {
+    .lista_um{
+        width: 90%;
+        margin: 0 auto;
+        font-family: 'Open Sans';
+    }
+    
+    .lista_um ul{
+        padding: 0;
+        list-style: none;
+        width: 45%;
+    }
+}
 .caixa_titulo{
     background-color: #142c4d;
     padding-top: 25px;
@@ -893,7 +958,7 @@ z-index: 9997;
 @media screen and (min-width: 960px) {
 
     .fale_conosco_conteudo{
-        margin: 40px;
+        margin: 20px 0;
         padding: 35px;
     }
     
@@ -915,10 +980,10 @@ z-index: 9997;
     font-family: 'poppins';
     font-weight: 600;
     line-height: 40px;
-    font-size: clamp(25px, 3vw, 40px);
+    font-size: clamp(25px, 3vw, 45px);
     color: #142c4d;    
     max-width: 20ch;
-    margin:  auto;
+    margin:  20px auto;
 }
 
 .fale_conosco_texto p,span{
@@ -938,38 +1003,28 @@ z-index: 9997;
     font-size: 17px; 
     font-weight: 900;
     line-height: 15px;
+    margin: 20px auto;
 }
 
 
-
-
-.formulario_fale_conosco h2{
-    color: white;
-    font-family: 'Poppins';
-    font-weight: bold;
-    background-color: #2a799a;
-    text-align: center;
-    padding: 15px 0 15px 0;
-    font-size: clamp(22px, 3vw, 35px);
-}
-
-
-
-.formulario_fale_conosco form{
-    width: 100%;
+.formulario_fale_conosco {
+    width: 100% ;
     margin: 0 auto;    
     margin-right: 0;
 }
 
+
 .formulario_fale_conosco label{
-    font-weight: bold;
+    font-weight: bold;    
 }
 
-.formulario_fale_conosco textarea{
+.formulario_fale_conosco textarea,
+.formulario_fale_conosco input{
     background-color: #efefef;
     margin-bottom: 15px;
     border-style: solid;
     padding-left: 8px;
+    width: 100% ;
 }
 
 
@@ -993,4 +1048,10 @@ z-index: 9997;
 }
 
 
+@media screen and (min-width: 960px) {
 
+    .formulario_fale_conosco{
+        width: 50%;
+    }
+    
+}
