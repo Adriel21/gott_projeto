@@ -26,7 +26,7 @@ $envio = mail($to , $subject, $message, $headers);
  
 if($envio) {
  echo "Mensagem enviada com sucesso";
- header("location:fale_conosco.html?sucesso");
+ header("location:fale_conosco.php?sucesso");
 } else {
  echo "A mensagem não pode ser enviada";
 }

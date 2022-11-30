@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <h1><a href=""><img src="imagens/cropped-gottconsultoria_logo-ps8xw6hi3ph9b2z6p7qqz5knmav5pxkikqp02p2ay0.png" alt="" width="100"></a></h1>
+        <h1><a href="index.html"><img src="imagens/cropped-gottconsultoria_logo-ps8xw6hi3ph9b2z6p7qqz5knmav5pxkikqp02p2ay0.png" alt="" width="100"></a></h1>
 
         <nav>
             <h2><span href="" title="" class="icone">&equiv;</span>
@@ -34,7 +34,7 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
-                <li><a class="active" href="fale_conosco.html">Fale Conosco</a></li>
+                <li><a class="active" href="fale_conosco.php">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -65,7 +65,7 @@
                     <label for="assunto">Assunto</label>
                     <input type="text" name="assunto" placeholder="Ex: Duvidas sobre serviços">
                     <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="" cols="30" rows="7" placeholder="Exreva sua mensagem"></textarea>
+                    <textarea name="mensagem" id="" cols="30" rows="7" placeholder="Escreva sua mensagem"></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -107,7 +107,7 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="trabalhe_conosco.html">Trabalhe Conosco</a></li>
-                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+                <li><a href="fale_conosco.php">Fale Conosco</a></li>
             </ul>
         </article>
         <article class="col-12 col-md-6 col-lg-3">
